@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>La Granja de Masao - Pedí Rápido</title>
   </head>
+
   <body>
     <header>
       <h1>LA GRANJA DE MASAO</h1>
@@ -18,6 +19,7 @@
 
         <section>
           <h3>Tus datos</h3>
+
           <label for="nombre">Nombre completo</label>
           <input type="text" id="nombre" name="nombre" required />
 
@@ -30,16 +32,23 @@
 
         <section>
           <h3>Tamaño</h3>
-          <input type="radio" id="chico" name="tamanio" value="chico" />
-          <label for="chico">Pequeño</label>
 
-          <input type="radio" id="grande" name="tamanio" value="grande" />
-          <label for="grande">Grande</label>
+          <div class="opcion">
+            <input type="radio" id="chico" name="tamanio" value="chico" />
+            <label for="chico">Pequeño</label>
+          </div>
+
+          <div class="opcion">
+            <input type="radio" id="grande" name="tamanio" value="grande" />
+            <label for="grande">Grande</label>
+          </div>
         </section>
 
         <section>
           <h3>Tipo de animal</h3>
+
           <label for="animal">Elegí tu animal</label>
+
           <select id="animal" name="animal" required>
             <option value="">-- Elegí uno --</option>
             <option value="gallina">Gallina</option>
@@ -51,40 +60,63 @@
 
         <section>
           <h3>Color del Animal</h3>
-          <input
-            type="checkbox"
-            id="blanco"
-            name="color_blanco"
-            value="blanco"
-          />
-          <label for="blanco">Blanco</label>
 
-          <input type="checkbox" id="negro" name="color_negro" value="negro" />
-          <label for="negro">Negro</label>
+          <div class="opcion">
+            <input
+              type="checkbox"
+              id="blanco"
+              name="color_blanco"
+              value="blanco"
+            />
+            <label for="blanco">Blanco</label>
+          </div>
 
-          <input
-            type="checkbox"
-            id="marron"
-            name="color_marron"
-            value="marron"
-          />
-          <label for="marron">Marrón</label>
+          <div class="opcion">
+            <input
+              type="checkbox"
+              id="negro"
+              name="color_negro"
+              value="negro"
+            />
+            <label for="negro">Negro</label>
+          </div>
 
-          <input
-            type="checkbox"
-            id="amarillo"
-            name="color_amarillo"
-            value="amarillo"
-          />
-          <label for="amarillo">Amarillo / Manchado</label>
+          <div class="opcion">
+            <input
+              type="checkbox"
+              id="marron"
+              name="color_marron"
+              value="marron"
+            />
+            <label for="marron">Marrón</label>
+          </div>
 
-          <input type="checkbox" id="gris" name="color_gris" value="gris" />
-          <label for="gris">Gris</label>
+          <div class="opcion">
+            <input
+              type="checkbox"
+              id="amarillo"
+              name="color_amarillo"
+              value="amarillo"
+            />
+            <label for="amarillo">Amarillo / Manchado</label>
+          </div>
+
+          <div class="opcion">
+            <input
+              type="checkbox"
+              id="gris"
+              name="color_gris"
+              value="gris"
+            />
+            <label for="gris">Gris</label>
+          </div>
         </section>
 
         <section>
           <h3>Cantidad</h3>
+
           <label for="cantidad">¿Cuántos animales?</label>
+
           <input
             type="number"
             id="cantidad"
@@ -98,6 +130,7 @@
 
         <section>
           <h3>Comentarios</h3>
+
           <textarea id="comentarios" name="comentarios" rows="4"></textarea>
         </section>
 
