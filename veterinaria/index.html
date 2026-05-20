@@ -1,30 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <header>
-    <h1>la veterinaria</h1>
-    <p>"Reserva el turno de tu mascota online"</p>
-   </header> 
-   <main>
-    <form>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinaria Patitas Felices</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Veterinaria Patitas Felices</h1>
+      <p>Reservá el turno de tu mascota online</p>
+    </header>
+
+    <main>
+      <form>
+        <!-- Sección 1 -->
         <section>
-    <h3>Datos del dueño</h3>
+          <h3>Tus datos</h3>
 
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email">
-</section>
-    </form>
-   </main>
-</body>
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" />
+        </section>
+
+        <!-- Sección 2 -->
+        <section>
+          <h3>Datos de tu mascota</h3>
+
+          <label for="mascota">Nombre de la mascota</label>
+          <input type="text" id="mascota" name="mascota" required />
+
+          <label for="especie">Especie</label>
+          <select id="especie" name="especie" required>
+            <option value="">-- Elegí una opción --</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="ave">Ave</option>
+            <option value="conejo">Conejo</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="peso">Peso aproximado (kg)</label>
+          <input type="number" id="peso" name="peso" min="0" />
+        </section>
+
+        <!-- Sección 3 -->
+        <section>
+          <h3>Motivo de la consulta</h3>
+
+          <div class="opcion-radio">
+            <input
+              type="radio"
+              id="control"
+              name="motivo"
+              value="control"
+            />
+            <label for="control">Control de rutina</label>
+          </div>
+
+          <div class="opcion-radio">
+            <input
+              type="radio"
+              id="vacuna"
+              name="motivo"
+              value="vacuna"
+            />
+            <label for="vacuna">Vacunación</label>
+          </div>
+
+          <div class="opcion-radio">
+            <input
+              type="radio"
+              id="enfermedad"
+              name="motivo"
+              value="enfermedad"
+            />
+            <label for="enfermedad">Enfermedad o síntoma</label>
+          </div>
+
+          <div class="opcion-radio">
+            <input type="radio" id="otro" name="motivo" value="otro" />
+            <label for="otro">Otro</label>
+          </div>
+        </section>
+
+        <!-- Sección 4 -->
+        <section>
+          <h3>Día preferido</h3>
+
+          <div class="opcion-checkbox">
+            <input
+              type="checkbox"
+              id="lunes"
+              name="dia_lunes"
+              value="lunes"
+            />
+            <label for="lunes">Lunes</label>
+          </div>
+
+          <div class="opcion-checkbox">
+            <input
+              type="checkbox"
+              id="miercoles"
+              name="dia_miercoles"
+              value="miercoles"
+            />
+            <label for="miercoles">Miércoles</label>
+          </div>
+
+          <div class="opcion-checkbox">
+            <input
+              type="checkbox"
+              id="viernes"
+              name="dia_viernes"
+              value="viernes"
+            />
+            <label for="viernes">Viernes</label>
+          </div>
+
+          <div class="opcion-checkbox">
+            <input
+              type="checkbox"
+              id="sabado"
+              name="dia_sabado"
+              value="sabado"
+            />
+            <label for="sabado">Sábado</label>
+          </div>
+        </section>
+
+        <!-- Sección 5 -->
+        <section>
+          <h3>Turno preferido</h3>
+
+          <label for="horario">Horario</label>
+
+          <select id="horario" name="horario" required>
+            <option value="">-- Elegí un horario --</option>
+            <option value="manana">Mañana (9 a 13hs)</option>
+            <option value="tarde">Tarde (14 a 18hs)</option>
+          </select>
+        </section>
+
+        <!-- Sección 6 -->
+        <section>
+          <h3>Información adicional</h3>
+
+          <label for="comentarios">
+            ¿Querés contarnos algo más sobre tu mascota?
+          </label>
+
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+          ></textarea>
+        </section>
+
+        <p id="mensaje"></p>
+
+        <button type="submit">Solicitar turno</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Veterinaria Patitas Felices — Buenos Aires</p>
+    </footer>
+  </body>
 </html>

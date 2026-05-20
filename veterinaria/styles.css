@@ -1,0 +1,151 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #ececec;
+  color: #333;
+}
+
+/* HEREDAR FUENTE */
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* HEADER */
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* MAIN */
+
+main {
+  padding: 30px 20px;
+}
+
+/* FORMULARIO */
+
+form {
+  max-width: 620px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SECCIONES */
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+section h3 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dcdcdc;
+  margin-bottom: 10px;
+}
+
+/* CAMPOS */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2e8b57;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.4);
+}
+
+textarea {
+  resize: vertical;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+/* RADIOS Y CHECKBOXES */
+
+.opcion-radio,
+.opcion-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.opcion-radio input,
+.opcion-checkbox input {
+  width: auto;
+}
+
+.opcion-radio label,
+.opcion-checkbox label {
+  cursor: pointer;
+}
+
+/* BOTÓN */
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #256f46;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
