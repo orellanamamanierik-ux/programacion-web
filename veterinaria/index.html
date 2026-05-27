@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,6 @@
 
     <main>
       <form>
-        <!-- Sección 1 -->
         <section>
           <h3>Tus datos</h3>
 
@@ -29,7 +28,6 @@
           <input type="text" id="telefono" name="telefono" />
         </section>
 
-        <!-- Sección 2 -->
         <section>
           <h3>Datos de tu mascota</h3>
 
@@ -54,22 +52,12 @@
           <h3>Motivo de la consulta</h3>
 
           <div class="opcion-radio">
-            <input
-              type="radio"
-              id="control"
-              name="motivo"
-              value="control"
-            />
+            <input type="radio" id="control" name="motivo" value="control" />
             <label for="control">Control de rutina</label>
           </div>
 
           <div class="opcion-radio">
-            <input
-              type="radio"
-              id="vacuna"
-              name="motivo"
-              value="vacuna"
-            />
+            <input type="radio" id="vacuna" name="motivo" value="vacuna" />
             <label for="vacuna">Vacunación</label>
           </div>
 
@@ -88,17 +76,12 @@
             <label for="otro">Otro</label>
           </div>
         </section>
-        
+
         <section>
           <h3>Día preferido</h3>
 
           <div class="opcion-checkbox">
-            <input
-              type="checkbox"
-              id="lunes"
-              name="dia_lunes"
-              value="lunes"
-            />
+            <input type="checkbox" id="lunes" name="dia_lunes" value="lunes" />
             <label for="lunes">Lunes</label>
           </div>
 
@@ -133,7 +116,6 @@
           </div>
         </section>
 
-        
         <section>
           <h3>Turno preferido</h3>
 
@@ -153,11 +135,7 @@
             ¿Querés contarnos algo más sobre tu mascota?
           </label>
 
-          <textarea
-            id="comentarios"
-            name="comentarios"
-            rows="4"
-          ></textarea>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
         </section>
 
         <p id="mensaje"></p>
