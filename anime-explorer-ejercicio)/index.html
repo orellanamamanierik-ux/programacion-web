@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Explorer </h1>
+        <p>Encontrá tus series y películas favoritas</p>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <div class="control">
+                <label for="busqueda">Buscar por título:</label>
+                <input type="text" id="busqueda" placeholder="Ej: Naruto, One Piece...">
+            </div>
+
+            <div class="control">
+                <label for="genero">Filtrar por género:</label>
+                <select id="genero">
+                    <option value="">Todos los géneros</option>
+                    <option value="Acción">Acción</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasía">Fantasía</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Romance">Romance</option>
+                </select>
+            </div>
+
+            <button id="btn-limpiar">Limpiar Filtros</button>
+        </section>
+
+        <section class="info-grilla">
+            <p id="contador">Cargando animes...</p>
+        </section>
+
+        <section id="grilla" class="grilla-cards">
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
